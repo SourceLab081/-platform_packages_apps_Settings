@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="qs_customization_screen"
+    android:title="@string/qs_customization_title">
+
+    <PreferenceCategory
+        android:key="category_brightness_slider"
+        android:title="@string/status_bar_brightness_slider_title">
+
+        <com.android.settings.custom.preference.SecureSettingListPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/status_bar_brightness_slider_title"
+            android:summary="%s"
+            android:entries="@array/qs_brightness_slider_show_entries"
+            android:entryValues="@array/qs_brightness_slider_show_values"
+            android:defaultValue="1" />
+
+        <com.android.settings.custom.preference.SecureSettingListPreference
+            android:key="qs_brightness_slider_position"
+            android:title="@string/status_bar_brightness_slider_position_title"
+            android:summary="%s"
+            android:entries="@array/status_bar_brightness_slider_position_entries"
+            android:entryValues="@array/status_bar_brightness_slider_position_values"
+            android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_brightness_slider_shape"
+            android:title="@string/qs_brightness_slider_shape_title"
+            android:summary="%s"
+            android:entries="@array/qs_brightness_slider_shape_entries"
+            android:entryValues="@array/qs_brightness_slider_shape_values"
+            android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_brightness_slider_shape_corner_radius"
+            android:title="@string/qs_brightness_slider_shape_corner_radius_title"
+            android:max="32"
+            settings:min="0"
+            settings:interval="1"
+            android:defaultValue="16"
+            settings:units="dp" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_default_tiles"
+        android:title="@string/qs_default_tiles_category"
+        android:summary="@string/qs_default_tiles_summary">
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape_title"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_tile_shape_corner_radius"
+            android:title="@string/qs_tile_shape_corner_radius_title"
+            android:max="32"
+            settings:min="0"
+            settings:interval="1"
+            android:defaultValue="16"
+            settings:units="dp" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_classic_tiles"
+        android:title="@string/qs_classic_tiles_category"
+        android:summary="@string/qs_classic_tiles_summary">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_panel_style"
+            android:title="@string/qs_panel_style_title"
+            android:summary="@string/qs_panel_style_summary"
+            android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_tile_label_hide"
+            android:title="@string/qs_tile_label_hide_title"
+            android:summary="@string/qs_tile_label_hide_summary"
+            android:defaultValue="0"
+            android:dependency="qs_panel_style" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_tile_icon_shape"
+            android:title="@string/qs_tile_icon_shape_title"
+            android:entries="@array/qs_tile_icon_shape_entries"
+            android:entryValues="@array/qs_tile_icon_shape_values"
+            android:defaultValue="default" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_classic_tile_icon_size"
+            android:title="@string/qs_classic_tile_icon_size_title"
+            android:summary="@string/qs_classic_tile_icon_size_summary"
+            android:max="96"
+            settings:min="40"
+            settings:interval="2"
+            android:defaultValue="64"
+            android:dependency="qs_panel_style" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_classic_tile_row_spacing"
+            android:title="@string/qs_classic_tile_row_spacing_title"
+            android:summary="@string/qs_classic_tile_row_spacing_summary"
+            android:max="32"
+            settings:min="0"
+            settings:interval="1"
+            android:defaultValue="8"
+            android:dependency="qs_panel_style" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_shade_panels"
+        android:title="@string/shade_panels_title">
+
+        <Preference
+            android:key="shade_panels_settings_shortcut"
+            android:title="@string/shade_panels_title"
+            android:summary="@string/shade_panels_portrait_title"
+            android:fragment="com.android.settings.system.ShadePanelsFragment" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_widget_panel"
+        android:title="@string/qs_widget_panel_title">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_widget_panel"
+            android:title="@string/qs_widget_panel_title"
+            android:summary="@string/qs_widget_panel_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_widget_show_tiles"
+            android:title="@string/qs_widget_show_tiles_title"
+            android:summary="@string/qs_widget_show_tiles_summary"
+            android:defaultValue="true"
+            android:dependency="qs_widget_panel" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_widget_tile_1"
+            android:title="@string/qs_widget_tile_1_title"
+            android:summary="%s"
+            android:entries="@array/qs_widget_tile_entries"
+            android:entryValues="@array/qs_widget_tile_values"
+            android:defaultValue="internet"
+            android:dependency="qs_widget_panel" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_widget_tile_2"
+            android:title="@string/qs_widget_tile_2_title"
+            android:summary="%s"
+            android:entries="@array/qs_widget_tile_entries"
+            android:entryValues="@array/qs_widget_tile_values"
+            android:defaultValue="bt"
+            android:dependency="qs_widget_panel" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="qs_widget_slider_corner"
+            android:title="@string/qs_widget_slider_corner_title"
+            android:summary="%s"
+            android:entries="@array/qs_widget_slider_style_entries"
+            android:entryValues="@array/qs_widget_slider_style_values"
+            android:defaultValue="0"
+            android:dependency="qs_widget_panel" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="category_columns_rows"
+        android:title="@string/qs_columns_rows_category">
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_tiles_columns"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="6"
+            settings:min="2"
+            settings:interval="1"
+            android:defaultValue="4" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_tiles_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="6"
+            settings:min="2"
+            settings:interval="1"
+            android:defaultValue="4" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_tiles_rows"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:interval="1"
+            android:defaultValue="4" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_tiles_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:interval="1"
+            android:defaultValue="2" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qqs_tiles_rows"
+            android:title="@string/qqs_rows_portrait_title"
+            android:max="3"
+            settings:min="1"
+            settings:interval="1"
+            android:defaultValue="2" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

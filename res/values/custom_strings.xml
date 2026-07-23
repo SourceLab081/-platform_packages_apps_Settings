@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 ASCP OS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Advanced keyboard settings -->
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Advanced settings</string>
+
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Rooted debugging</string>
+    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Refresh rate</string>
+    <string name="refresh_rate_summary_vrr_off">%d Hz</string>
+    <string name="refresh_rate_summary_vrr_on">%d Hz (Adaptive)</string>
+    <string name="refresh_rate_vrr_title">Adaptive refresh rate</string>
+    <string name="refresh_rate_vrr_summary">Automatically lower the refresh rate when the display is idle, to save power. May cause flickering or color shift on certain displays</string>
+    <string name="refresh_rate_footer">A higher refresh rate makes the display smoother, but increases power consumption</string>
+    <string name="keywords_refresh_rate">refresh, rate, smooth, peak, 60hz, 90hz, 120hz, 144hz, 165hz</string>
+
+    <!-- Location settings screen, setting check box label if Assisted GPS should be enabled -->
+    <string name="assisted_gps">Use assisted GPS</string>
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">Download satellite assistance data from the internet which can greatly improve the GPS startup performance. For emergency calls, assisted GPS is always allowed.</string>
+
+    <!-- ASCP -->
+    <string name="ascp_version">ASCP OS version</string>
+    <string name="ascp_maintainer">Maintainer</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation settings</string>
+    <string name="display_rotation_enabled">Auto-rotation is enabled</string>
+    <string name="display_rotation_disabled">Auto-rotation is disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Spoofing -->
+    <string name="spoof_settings_title">Spoofing</string>
+    <string name="spoofing_category_summary">Play Integrity Fix, TrickyStore, and game spoofing</string>
+    <string name="system_spoof_title">System spoof</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+
+    <string name="auto_select">Auto-select</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_search">Clear search</string>
+    <string name="delete">Delete</string>
+    <string name="hide_system_apps">Hide system apps</string>
+    <string name="ok">OK</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <string name="select_all">Select all</string>
+    <string name="show_system_apps">Show system apps</string>
+    <string name="system_badge">SYS</string>
+
+    <!-- Play Integrity Fix -->
+    <string name="play_integrity_fix_title">Play Integrity Fix</string>
+    <string name="play_integrity_fix_summary">Manage PIF configuration and device fingerprints for basic integrity</string>
+    <string name="pif_status">Status</string>
+    <string name="pif_active_config">Active configuration</string>
+    <string name="pif_no_config">No configuration loaded</string>
+    <string name="pif_config_loaded">Configuration loaded</string>
+    <string name="pif_fetch_pixel_beta">Fetch Pixel Beta fingerprint</string>
+    <string name="pif_fetch_pixel_beta_summary">Download latest Pixel Beta fingerprint from Google</string>
+    <string name="pif_fetching">Fetching from Google\u2026</string>
+    <string name="pif_fetched_model">Fetched fingerprint for %s</string>
+    <string name="pif_import_config">Import configuration</string>
+    <string name="pif_import_config_summary">Import PIF config from a file</string>
+    <string name="pif_imported_as">Imported as %s</string>
+    <string name="pif_delete_config">Delete active configuration</string>
+    <string name="pif_delete_config_summary">Remove the currently active config file</string>
+    <string name="pif_delete_title">Delete %s?</string>
+    <string name="pif_delete_message">This configuration file will be permanently removed.</string>
+    <string name="pif_delete">Delete</string>
+    <string name="pif_deleted">Deleted %s</string>
+    <string name="pif_settings">Settings</string>
+    <string name="pif_spoof_photos">Spoof Google Photos</string>
+    <string name="pif_spoof_photos_summary">Unlimited original quality backup</string>
+    <string name="pif_manage_targets">Spoofed apps</string>
+    <string name="pif_manage_targets_summary">Select additional apps to spoof device properties for</string>
+    <string name="pif_spoof_props">Spoof build properties</string>
+    <string name="pif_spoof_props_summary">Spoof build properties for Google Play Services</string>
+    <string name="pif_spoof_provider">Spoof providers</string>
+    <string name="pif_spoof_provider_summary">Spoof package provider to GMS/Vending</string>
+    <string name="pif_spoof_signature">Spoof signature</string>
+    <string name="pif_spoof_signature_summary">Spoof package signature for Google Play Services</string>
+    <string name="pif_spoof_vending_build">Spoof Play Store build properties</string>
+    <string name="pif_spoof_vending_build_summary">Spoof build properties for Google Play Store</string>
+    <string name="pif_manage_targets_title">Spoofed apps</string>
+    <string name="pif_no_targets">No apps selected</string>
+    <string name="pif_target_apps_count">%d apps selected</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="pif_config_details">Configuration details</string>
+    <string name="pif_failed">Failed: %s</string>
+    <string name="pif_select_device">Select device</string>
+    <string name="pif_generating">Generating configuration\u2026</string>
+    <string name="pif_footer_title">Passing basic integrity</string>
+    <string name="pif_footer_body">1. Tap \"Fetch Pixel Beta fingerprint\" and select a device from the available list.\n2. If no devices are found, import a working PIF config from a trusted source. Config files are not provided; you must find one yourself.\n3. Recheck your Play Integrity status.\n\nAlways delete the active configuration before loading a new one. Loading an expired PIF config will cause strong integrity via TrickyStore to fail, even with a valid keybox.</string>
+    <string name="pif_select_channel">Select channel</string>
+    <string name="pif_channel_latest_release">Latest release</string>
+    <string name="pif_channel_canary_release">Canary release</string>
+
+    <!-- TrickyStore -->
+    <string name="tricky_store_title">TrickyStore</string>
+    <string name="tricky_store_summary">Manage keybox and target apps for attestation for strong integrity</string>
+    <string name="ts_keybox_management">Keybox management</string>
+    <string name="ts_import_keybox">Import keybox</string>
+    <string name="ts_no_keybox">No keybox installed</string>
+    <string name="ts_keybox_installed">Keybox installed</string>
+    <string name="ts_keybox_imported">Keybox imported successfully</string>
+    <string name="ts_delete_keybox">Delete keybox</string>
+    <string name="ts_delete_keybox_summary">Remove keybox file</string>
+    <string name="ts_delete_keybox_title">Delete keybox?</string>
+    <string name="ts_delete_keybox_message">The keybox file will be permanently removed.</string>
+    <string name="ts_keybox_deleted">Keybox deleted</string>
+    <string name="ts_target_configuration">Target configuration</string>
+    <string name="ts_manage_target_apps">Manage target apps</string>
+    <string name="ts_no_targets">No target apps configured</string>
+    <string name="ts_target_apps_count">%d apps configured</string>
+    <string name="ts_import_target_list">Import target list</string>
+    <string name="ts_import_target_list_summary">Import target.txt from a file</string>
+    <string name="ts_target_list_imported">Target list imported</string>
+    <string name="ts_failed">Failed: %s</string>
+    <string name="ts_footer_title">Passing strong integrity</string>
+    <string name="ts_footer_body">1. Obtain a valid keybox XML from a trusted source. Keyboxes are not provided; you must find one yourself.\n2. Tap \"Import keybox\" and load the file.\n3. Open \"Manage target apps\" and select Google Play Services and Google Play Store.\n4. Set target mode to \"Leaf\" if your device has a working TEE, otherwise leave it as Auto.\n5. Recheck your Play Integrity status.\n\nAlways delete the existing keybox before importing a new one. If Google revokes a keybox, it may still allow passing up to device integrity even though strong integrity will fail.</string>
+    <string name="ts_verification_mode">Verification mode</string>
+    <string name="ts_verification_mode_auto">Auto</string>
+    <string name="ts_verification_auto_count">%1$d auto</string>
+    <string name="ts_verification_cert_count">%1$d cert</string>
+    <string name="ts_verification_leaf_count">%1$d leaf</string>
+    <string name="ts_patch_date_hint" translatable="false">YYYY-MM-DD</string>
+    <string name="ts_invalid_patch_date">Invalid date format. Use YYYY-MM-DD</string>
+    <string name="ts_security_patch">Security patch date</string>
+    <string name="ts_no_patch">Not set (using device default)</string>
+    <string name="ts_selected_count">%d selected</string>
+    <string name="ts_mode_auto">Auto</string>
+    <string name="ts_mode_leaf">Leaf</string>
+    <string name="ts_mode_cert">Cert</string>
+
+    <!-- Game Spoofing -->
+    <string name="game_spoofing_title">Game spoofing</string>
+    <string name="game_spoofing_summary">Spoof device properties for specific games</string>
+    <string name="gs_enable">Enable game spoofing</string>
+    <string name="gs_enable_summary">Spoof device properties for configured games</string>
+    <string name="gs_add_app">Add game</string>
+    <string name="gs_add_app_summary">Select an app and device profile to spoof</string>
+    <string name="gs_reload">Reload</string>
+    <string name="gs_reload_summary">Reload configuration from disk</string>
+    <string name="gs_configured_apps">Configured games</string>
+    <string name="gs_no_apps">No games configured</string>
+    <string name="gs_no_apps_summary">Tap \"Add game\" to get started</string>
+    <string name="gs_select_app">Select app</string>
+    <string name="gs_select_profile">Select device profile</string>
+    <string name="gs_edit_props">Edit properties</string>
+    <string name="gs_change_profile">Change device profile</string>
+    <string name="gs_remove">Remove</string>
+    <string name="gs_remove_title">Remove game?</string>
+    <string name="gs_remove_message">Remove %s from game spoofing?</string>
+    <string name="gs_edit_app">Edit %s</string>
+    <string name="gs_key">Key</string>
+    <string name="gs_value">Value</string>
+    <string name="gs_save">Save</string>
+    <string name="gs_config_saved">Configuration saved</string>
+    <string name="gs_loading_apps">Loading apps\u2026</string>
+    <string name="gs_failed">Failed: %s</string>
+
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+    
+    <!-- Black theme for dark mode -->
+    <string name="berry_black_theme_title">Pure black</string>
+    <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+
+    <!-- Copy to clipboard -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="longpress_to_clipboard">Long-press to copy</string>
+
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Heads-up</string>
+    <string name="heads_up_notifications_enabled_summary">Display priority notifications in a small floating window</string>
+
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Locate the fingerprint sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Locate the fingerprint sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Locate the fingerprint sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Locate the fingerprint sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Locate the fingerprint sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Locate the fingerprint sensor on the side of your phone.</string>
+
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Touch the sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Touch the sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Touch the sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Touch the sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Touch the sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Touch the sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Touch the sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+
+    <!-- App Spoofing -->
+    <string name="user_selectable_app_spoofing_title">App Spoofing</string>
+    <string name="user_selectable_app_spoofing_summary">Choose which apps to spoof device properties for</string>
+    <string name="user_select_spoofing_profile_title">Select spoofing profile</string>
+    <string name="app_spoofing_category_title">Per-App Spoofing</string>
+    <string name="app_spoofing_header_title">Enable Spoofing</string>
+    <string name="app_spoofing_configured_count">%1$d apps Spoofed</string>
+    <string name="app_spoofing_disabled">Disabled</string>
+    <string name="app_spoofing_add_apps">Add apps</string>
+    <string name="app_spoofing_spoofed_model">Select model</string>
+    <string name="app_spoofing_clear_all">Clear all</string>
+    <string name="app_spoofing_configured_apps">Configured app list</string>
+    <string name="app_spoofing_no_apps_configured">No apps configured</string>
+    <string name="app_spoofing_spoof_model">Spoof model</string>
+    <string name="app_spoofing_select_spoof_model">Select spoof model</string>
+    <string name="app_spoofing_change_app">Change app</string>
+
+    <!-- Custom App Spoofing Profiles -->
+    <string name="add_new_spoof_profile">Add new</string>
+    <string name="add_custom_spoof_profile_title">Add Custom Spoof Profile</string>
+    <string name="custom_spoof_profile_name">Profile name</string>
+    <string name="custom_spoof_profile_brand">BRAND</string>
+    <string name="custom_spoof_profile_manufacturer">MANUFACTURER</string>
+    <string name="custom_spoof_profile_device">DEVICE</string>
+    <string name="custom_spoof_profile_model">MODEL</string>
+    <string name="custom_spoof_profile_fingerprint">FINGERPRINT (Optional)</string>
+    <string name="custom_spoof_profile_product">PRODUCT (Optional)</string>
+    <string name="app_spoofing_clear_all_confirm">This will remove all configured app spoofing entries.</string>
+    <string name="app_spoofing_no_apps_available">No apps available</string>
+    <string name="app_spoofing_no_apps_found">No apps found for "%s"</string>
+    <string name="app_spoofing_clear_search">Clear search</string>
+    <string name="app_spoofing_longpress_hint">Long press to quickly reassign profile</string>
+    <string name="app_spoofing_remove_title">Remove app?</string>
+    <string name="app_spoofing_remove_confirm">Remove %1$s from the spoofing list?</string>
+
+    <!-- IME button space -->
+    <string name="show_ime_space_title">Show IME button space</string>
+    <string name="show_ime_space_summary">Enable the input method quick switch feature to switch input methods or hide the on-screen keyboard from the feature bar at the bottom of the screen when typing</string>
+
+    <!-- Navbar options -->
+    <string name="navbar_category">Navigation bar</string>
+    <string name="show_navbar_hint_title">Navigation hint</string>
+    <string name="show_navbar_hint_summary">Show navigation hint bar at the bottom of the screen</string>
+
+    <!-- Dim wallpaper at night -->
+    <string name="ui_night_mode_dim_wall_title">Dim wallpaper</string>
+    <string name="ui_night_mode_dim_wall_summary">Dim the wallpaper when using dark theme</string>
+    <string name="ui_night_mode_dim_wall_amount_title">Dim amount</string>
+    <string name="ui_night_light_dim_wall_summary">Dim the wallpaper when using night light</string>
+
+    <!-- Reset auto brightness adjustment -->
+    <string name="reset_auto_brightness_adjustment_title">Reset preference</string>
+    <string name="reset_auto_brightness_adjustment_summary">Let the system forget your brightness preference and reset it to the default one</string>
+    <string name="reset_auto_brightness_adjustment_done">Auto brightness preference has been reset</string>
+
+    <!-- Minimum auto brightness -->
+    <string name="user_min_auto_brightness_title">Minimum auto brightness level</string>
+    <string name="user_min_auto_brightness_summary">Limits the lowest brightness level for auto brightness</string>
+
+    <!-- Display settings screen, color balance category title [CHAR LIMIT=30] -->
+    <string name="color_mode_advanced_category">Advanced controls</string>
+    <string name="color_mode_advanced_summary">Adjust color balance, saturation, temperature, hue, contrast, and brightness</string>
+    <!-- Display settings screen, red color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_red">Red strength</string>
+    <!-- Display settings screen, green color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_green">Green strength</string>
+    <!-- Display settings screen, blue color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_blue">Blue strength</string>
+    <string name="keywords_color_balance">color, color balance, color correction, red, green, blue, LiveDisplay</string>
+
+    <!-- Color temperature -->
+    <string name="color_temperature_title">Color temperature</string>
+    <string name="color_temperature_start_label">Warm</string>
+    <string name="color_temperature_end_label">Cool</string>
+    <string name="keywords_color_temperature">color, color temperature, warm, cool, LiveDisplay</string>
+
+    <!-- Color saturation -->
+    <string name="color_saturation_title">Saturation</string>
+    <string name="keywords_color_saturation">color, color temperature, warm, cool, LiveDisplay</string>
+    <string name="color_hue_title">Hue</string>
+    <string name="color_contrast_title">Contrast</string>
+    <string name="color_picture_brightness_title">Picture brightness</string>
+
+    <!-- Custom actions -->
+    <string name="action_nothing">No action</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_launch_camera">Camera</string>
+    <string name="action_flashlight">Flashlight</string>
+    <string name="action_clear_notifications">Clear notifications</string>
+    <string name="action_volume_panel">Volume panel</string>
+    <string name="action_screen_off">Screen off</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_qs_panel">QS panel</string>
+    <string name="action_app_action">Application</string>
+    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="kill_app">Kill foreground app</string>
+    <string name="recent_app_toggle">Switch recent app</string>
+    <string name="show_powermenu">Show Power menu</string>
+    <string name="action_app_switch">Recents</string>
+    <string name="action_forward">Go forward</string>
+    <string name="action_menu">Menu</string>
+
+    <!-- Advanced gesture options -->
+    <string name="navbar_gesture_tweaks_pref_title">Advanced gesture options</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gesture navigation actions</string>
+
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_title">Back gesture animation</string>
+    <string name="back_gesture_arrow_summary">Show an animated arrow for back gesture</string>
+
+    <!-- Back gesture haptic -->
+    <string name="back_gesture_haptic_title">Back gesture haptic</string>
+    <string name="back_gesture_haptic_summary">Vibrate when performing a back gesture</string>
+
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom</string>
+    <string name="back_height_title">Back gesture height</string>
+    <string name="back_height_summary">Screen height valid for back gesture</string>
+
+    <string name="swipe_app_select_summary">Select an app or long-press to select an activity</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="left_vertical_swipe_actions_title">Vertical left L-swipe action</string>
+    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
+    <string name="right_vertical_swipe_actions_title">Vertical right L-swipe action</string>
+    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">Long-press an app in the picker to choose a specific activity.\n\nIf launcher is showing, perform the swipe at the very bottom of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger actions with a wide swipe or vertical L-swipe instead of waiting for the timeout</string>
+    <string name="back_gesture_feedback_title">Gesture feedback</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="secure_lockscreen_category_title">Secure lockscreen</string>
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Quick torch</string>
+    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+
+    <!-- Volume button music control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">Cycle through modes</string>
+    <string name="prevent_ringing_option_cycle_summary">On (cycle through modes)</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Bypass screenshot protection</string>
+    <string name="ignore_window_secure_summary">Allow screenshots and screen recording in apps that normally block them ,use with caution as it may expose sensitive content.</string>
+    
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+
+    <!-- Power off alarm -->
+    <string name="poweroff_alarm_title">Power off alarm</string>
+    <string name="poweroff_alarm_summary">Turn on the device automatically when an alarm is scheduled</string>
+
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    
+    <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_vibrate_title">Fingerprint authentication vibration</string>
+    <string name="fp_success_vibrate_summary">Vibrate when fingerprint authentication is successful</string>
+    <string name="fp_error_vibrate_title">Fingerprint error vibration</string>
+    <string name="fp_error_vibrate_summary">Vibrate when fingerprint authentication fails</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Battery indicator</string>
+    <string name="status_bar_battery_style_title">Battery status style</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
+    <!-- Status bar - Padding -->
+    <string name="statusbar_padding_title">Status bar padding</string>
+    <string name="statusbar_padding_summary">Adjust status bar extra padding</string>
+    <string name="statusbar_padding_start_title">Start padding</string>
+    <string name="statusbar_padding_top_title">Top padding</string>
+    <string name="statusbar_padding_end_title">End padding</string>
+
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_disable">Disabled</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
+    <string name="network_traffic_number_size_title">Number text size</string>
+    <string name="network_traffic_show_units">Show units</string>
+    <string name="network_traffic_show_units_summary">Display measurement units after the traffic value</string>
+    <string name="network_traffic_unit_size_title">Unit text size</string>
+    <string name="network_traffic_display_style_title">Display style</string>
+    <string name="network_traffic_display_style_combined">Combined (total)</string>
+    <string name="network_traffic_display_style_separate">Separate (upload/download)</string>
+
+    <!-- setting status_bar_shade_split_percentage -->
+    <string name="status_bar_shade_split_percentage_title">Shade split ratio</string>
+
+    <!-- Dual shade orientation customization -->
+    <string name="shade_panels_portrait_title">Portrait layout</string>
+    <string name="shade_panels_landscape_title">Landscape layout</string>
+
+    <!-- Ambient wake toggles -->
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+    <string name="doze_gesture_vibrate_title">Vibrate on gesture</string>
+    <string name="doze_gesture_vibrate_summary">Vibrate when a successful wake gesture is detected</string>
+    <string name="gesture_wake_ambient">Show Ambient</string>
+    <string name="gesture_wake">Fully wake</string>
+
+    <!-- Doze enablement -->
+    <string name="doze_enabled_title">Ambient display</string>
+    <string name="doze_enabled_summary">Whether to enable the doze package functionality</string>
+
+    <!-- Obscura -->
+    <string name="obscura_title">Obscura</string>
+    <string name="obscura_summary">App hiding, sandboxing and settings spoofing</string>
+    <string name="obscura_apps_title">App Control</string>
+    <string name="obscura_manage_apps_title">Manage apps</string>
+    <string name="obscura_manage_apps_summary">Configure hiding, sandbox and spoof settings per app</string>
+
+    <!-- Enforce DNS for VPN -->
+    <string name="vpn_enforce_dns_title">Disable for VPN</string>
+    <string name="vpn_enforce_dns_summary">Disable the private DNS when connected to a VPN\nWill restore upon disconnecting</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="string_disabled">Disabled</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always show when charging</string>
+    <string name="doze_on_charge_summary">Show time and info all the time when charging</string>
+
+    <!-- PowerInsight -->
+    <string name="power_insight_title">PowerInsight</string>
+    <string name="power_insight_summary">Advanced battery analytics and real-time monitoring</string>
+    <string name="power_insight_realtime">Real-time</string>
+    <string name="power_insight_history">History</string>
+    <string name="power_insight_current">Current</string>
+    <string name="power_insight_voltage">Voltage</string>
+    <string name="power_insight_temp">Temperature</string>
+    <string name="power_insight_sot">Screen On Time</string>
+    <string name="power_insight_idle">Idle Time</string>
+    <string name="power_insight_deep_sleep">Deep Sleep</string>
+    <string name="power_insight_health">Battery Health</string>
+    <string name="power_insight_cycle_count">Cycle Count</string>
+    <string name="power_insight_reset">Reset Stats</string>
+    <string name="power_insight_reset_confirm">Are you sure you want to reset all battery statistics?</string>
+
+    <!-- PowerInsight Notification -->
+    <string name="power_insight_notif_active">Active: %1$s%%/h</string>
+    <string name="power_insight_notif_idle">Idle: %1$s%%/h</string>
+    <string name="power_insight_notif_screen_on">Screen on: %1$s • %2$s%%</string>
+    <string name="power_insight_notif_screen_off">Screen off: %1$s • %2$s%%</string>
+    <string name="power_insight_notif_awake">Awake: %1$s (%2$s%%)</string>
+    <string name="power_insight_notif_deep_sleep">Deep sleep: %1$s (%2$s%%)</string>
+    <string name="power_insight_notif_charging">Charging</string>
+    <string name="power_insight_notif_discharging">Discharging</string>
+
+    <!-- PowerInsight Settings -->
+    <string name="power_insight_settings_tab">Settings</string>
+    <string name="power_insight_master_toggle">Enable Power Insight</string>
+    <string name="power_insight_master_toggle_summary">Monitor battery usage and health in background</string>
+    <string name="power_insight_notif_toggle">Persistent Notification</string>
+    <string name="power_insight_notif_toggle_summary">Show detailed battery monitoring in notification panel</string>
+    <string name="power_insight_auto_reset_level_title">Auto Reset Threshold</string>
+    <string name="power_insight_auto_reset_level_summary">Automatically reset statistics when battery level reaches a specific percentage</string>
+    <string name="power_insight_auto_reset_level_percent">Reset Percentage</string>
+    <string name="power_insight_reset_plugged">Reset on plugged in</string>
+    <string name="power_insight_reset_plugged_summary">Reset stats when charger is connected</string>
+    <string name="power_insight_reset_reboot">Reset on reboot</string>
+    <string name="power_insight_reset_reboot_summary">Reset stats after system restart</string>
+    <string name="power_insight_manual_reset">Reset Statistics</string>
+    <string name="power_insight_manual_reset_summary">Clear all current battery monitoring data</string>
+    <string name="power_insight_notif_interval">Update Interval</string>
+    <string name="power_insight_notif_interval_summary">Refresh data every %1$d seconds</string>
+    <string name="power_insight_interval_5s">5 seconds</string>
+    <string name="power_insight_interval_10s">10 seconds</string>
+    <string name="power_insight_interval_15s">15 seconds</string>
+    <string name="power_insight_interval_30s">30 seconds</string>
+    <string name="power_insight_interval_60s">60 seconds</string>
+    <string name="power_insight_notif_icon">Notification Icon Style</string>
+    <string name="power_insight_icon_battery">Battery Icon</string>
+    <string name="power_insight_icon_percent">Percentage Only</string>
+    <string name="power_insight_icon_circle_percent">Circle Percentage</string>
+    <string name="power_insight_icon_temp">Temperature</string>
+    <string name="power_insight_icon_percent_temp">Percentage &amp; Temp</string>
+    <string name="power_insight_icon_current">Current (mA)</string>
+    <string name="power_insight_icon_voltage">Voltage</string>
+    <string name="power_insight_icon_power">Power (Watts)</string>
+    <string name="power_insight_no_data">No data available yet</string>
+    <string name="power_insight_battery_alarm_title">Battery level alarm</string>
+    <string name="power_insight_battery_alarm_summary">Enable battery level alerts for timely notifications when specific thresholds are reached.</string>
+    <string name="power_insight_alarm_frequency">Alarm frequency</string>
+    <string name="power_insight_alarm_sound">Alarm sound</string>
+    <string name="power_insight_alarm_vibrate">Play vibration</string>
+    <string name="power_insight_alarm_vibrate_summary">Trigger a long vibration pattern when the alarm goes off.</string>
+    <string name="power_insight_full_charge_alarm">Notify when fully charged</string>
+    <string name="power_insight_full_charge_alarm_summary">Get a notification when the battery is fully charged. Devices are usually fully charged 30mins to 1h after the device reaches 100%</string>
+
+    <!-- AOD settings categories -->
+    <string name="aod_category_peek">Peek display</string>
+    <string name="aod_category_schedule_behavior">Schedule &amp; behavior</string>
+    <string name="aod_category_schedule_behavior_purpose">Controls AOD schedule and charging behavior</string>
+    <string name="aod_category_customization">Customization</string>
+    <string name="aod_category_customization_purpose">Customize AOD appearance and content</string>
+
+    <!-- AOD Peek -->
+    <string name="doze_peek_title">AOD Peek</string>
+    <string name="doze_peek_summary">Show ambient display briefly when the screen turns off</string>
+    <string name="doze_peek_duration_title">Peek duration</string>
+
+    <!-- AOD Shake -->
+    <string name="aod_category_shake">Shake gesture</string>
+    <string name="doze_shake_title">Shake to show AOD</string>
+    <string name="doze_shake_summary">Show always-on display briefly when shaking the device</string>
+    <string name="doze_shake_duration_title">Duration of brief AOD</string>
+    <string name="doze_shake_intensity_title">Shake intensity</string>
+    <string name="doze_shake_intensity_low">Low (gentle shake)</string>
+    <string name="doze_shake_intensity_medium">Medium (standard shake)</string>
+    <string name="doze_shake_intensity_high">High (firm/hard shake)</string>
+
+    <!-- Ambient display -->
+    <string name="ambient_display_category_title">Ambient display</string>
+    <string name="ambient_bottom_title">AOD bottom</string>
+    <string name="ambient_battery_disable_title">Disabled</string>
+    <string name="ambient_battery_percent_title">Battery level</string> 
+    <string name="ambient_battery_both_title">Battery (Level &amp; temperature)</string>
+    <string name="ambient_battery_cpu_battery_temperature_title">Battery level, temperature (Battery &amp; CPU)</string>
+    <string name="ambient_user_name_title">User name</string>
+    <string name="display_icon_title">Icons</string>
+    <string name="display_icon_summary">Display icons along with level &amp; temperature</string>
+
+    <!-- Pocket mode -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
+    <!-- Idle Manager -->
+    <string name="idle_manager_title">Idle Manager</string>
+    <string name="idle_manager_summary">Manage background processes and optimize battery life</string>
+    <string name="idle_manager_app_count">%1$d apps monitored</string>
+    <string name="idle_manager_disabled">Disabled — tap to enable</string>
+    <string name="idle_manager_tab_apps">Apps</string>
+    <string name="idle_manager_tab_dashboard">Dashboard</string>
+    <string name="idle_manager_add_apps">Add apps</string>
+    <string name="idle_manager_clear_all">Clear all</string>
+    <string name="idle_manager_clear_all_confirm">Remove all configured apps? Their standby buckets will be restored.</string>
+    <string name="idle_manager_configured_apps">Configured apps</string>
+    <string name="idle_manager_no_apps_configured">No apps configured</string>
+    <string name="idle_manager_no_apps_hint">Tap \"Add apps\" to start managing background processes.</string>
+    <string name="idle_manager_no_apps_available">No apps available</string>
+    <string name="idle_manager_no_apps_found">No apps matching \"%1$s\"</string>
+    <string name="idle_manager_back_to_apps">← Back</string>
+    <string name="idle_manager_select_policy">Set policy</string>
+    <string name="idle_manager_select_policy_count">Next: Set policy for %1$d app(s)</string>
+    <string name="idle_manager_edit_policy">Edit: %1$s</string>
+    <string name="idle_manager_idle_timeout">Idle timeout</string>
+    <string name="idle_manager_policy_balanced">Balanced</string>
+    <string name="idle_manager_policy_aggressive">Aggressive</string>
+    <string name="idle_manager_policy_custom">Custom</string>
+    <string name="idle_manager_policy_balanced_desc">Apps idle for 60 minutes will be acted on.</string>
+    <string name="idle_manager_policy_aggressive_desc">Apps idle for 15 minutes will be acted on. Recommended for battery savings.</string>
+    <string name="idle_manager_policy_custom_desc">Set your own idle timeout.</string>
+    <string name="idle_manager_timeout_minutes">Timeout: %1$d min</string>
+    <string name="idle_manager_apply_custom">Apply</string>
+    <string name="idle_manager_timeout_label">Timeout</string>
+    <string name="idle_manager_policy_label">Policy</string>
+    <string name="idle_manager_enforcement_action">Enforcement action</string>
+    <string name="idle_action_rare_bucket">Rare Bucket</string>
+    <string name="idle_action_restricted">Restricted</string>
+    <string name="idle_action_kill_bg">Kill BG</string>
+    <string name="idle_action_full_kill">Full Kill</string>
+    <string name="idle_manager_policy_custom_desc_dynamic">Apps idle for %1$d minutes will be acted on.</string>
+    <string name="idle_action_rare_bucket_desc">Moves app to RARE standby. Blocks background jobs and alarms. App restores automatically when opened.</string>
+    <string name="idle_action_restricted_desc">Moves app to RESTRICTED standby. Most aggressive bucket. Very few background operations allowed.</string>
+    <string name="idle_action_kill_bg_desc">Soft-kills cached background processes. App may restart on its own.</string>
+    <string name="idle_action_full_kill_desc">RESTRICTED bucket + soft-kill. Maximum enforcement. Ideal for battery savings.</string>
+    <string name="idle_manager_kill_count_label">Total actions</string>
+    <string name="idle_manager_last_killed_label">Last action</string>
+    <string name="idle_manager_last_killed">Last: %1$s</string>
+    <string name="idle_manager_longpress_hint">Long-press to edit quickly</string>
+    <string name="idle_manager_critical_system_warning">Critical system package. Restricting this may cause instability.</string>
+    <string name="idle_manager_remove_title">Remove app?</string>
+    <string name="idle_manager_remove_confirm">%1$s will be removed. Its standby bucket will be restored.</string>
+    <string name="idle_manager_apps_acted_on">Apps acted on</string>
+    <string name="idle_manager_total_actions">Total actions</string>
+    <string name="idle_manager_action_breakdown">Action breakdown</string>
+    <string name="idle_manager_recent_activity">Recent activity</string>
+    <string name="idle_manager_no_activity">No activity yet</string>
+    <string name="idle_manager_no_activity_hint">Actions will appear here after the device screen turns off and apps are idle.</string>
+    <string name="idle_manager_refresh_dashboard">Refresh dashboard</string>
+    <string name="idle_manager_apply">Apply</string>
+    <string name="idle_manager_clear_stats_title">Clear stats</string>
+    <string name="idle_manager_clear_stats_confirm">This will permanently delete all enforcement history. The idle manager will continue running normally.</string>
+    <string name="idle_manager_clear_stats_button">Clear</string>
+    <string name="idle_manager_sleep_mode_trigger_title">Trigger on Sleep Mode</string>
+    <string name="idle_manager_sleep_mode_trigger_summary">Only enforce idle rules while Sleep Mode is active</string>
+
+    <!-- Idle Manager Backup & Restore -->
+    <string name="idle_manager_backup_menu_import">Import settings</string>
+    <string name="idle_manager_backup_menu_export">Export settings</string>
+    <string name="idle_manager_backup_export_title">Export Settings</string>
+    <string name="idle_manager_backup_export_desc">Select what you would like to include in the backup file:</string>
+    <string name="idle_manager_backup_include_global">Include global configurations</string>
+    <string name="idle_manager_backup_include_global_desc">Enable switch, Sleep Mode trigger, etc.</string>
+    <string name="idle_manager_backup_include_apps">Include app configurations</string>
+    <string name="idle_manager_backup_include_apps_desc">Custom timeouts and actions for selected apps</string>
+    <string name="idle_manager_backup_select_apps">Select apps to export</string>
+    <string name="idle_manager_backup_export_button">Export</string>
+    <string name="idle_manager_backup_import_title">Import Settings</string>
+    <string name="idle_manager_backup_import_desc">Select the settings and apps you want to restore from the backup:</string>
+    <string name="idle_manager_backup_import_global">Restore global configurations</string>
+    <string name="idle_manager_backup_import_apps">Restore app configurations</string>
+    <string name="idle_manager_backup_select_import_apps">Select apps to import</string>
+    <string name="idle_manager_backup_app_installed">Installed</string>
+    <string name="idle_manager_backup_app_not_installed">Not installed</string>
+    <string name="idle_manager_backup_import_button">Import</string>
+    <string name="idle_manager_backup_export_success">Settings exported successfully</string>
+    <string name="idle_manager_backup_export_failed">Export failed</string>
+    <string name="idle_manager_backup_import_success">Settings imported successfully</string>
+    <string name="idle_manager_backup_import_failed">Import failed: Invalid file</string>
+
+    <!-- Sleep Mode -->
+    <string name="sleep_mode_title">Sleep Mode</string>
+    <string name="sleep_mode_summary_on">On / <xliff:g name="auto_mode_summary" example="Never turn off automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_summary_off">Off / <xliff:g name="auto_mode_summary" example="Never turn on automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_ringer_title">Ringer mode</string>
+    <string name="sleep_mode_ringer_off_title">Do not change</string>
+    <string name="sleep_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="sleep_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="sleep_mode_ringer_silent_title">Silent</string>
+    <string name="sleep_mode_schedule_sunset">Sunset</string>
+    <string name="sleep_mode_schedule_sunrise">Sunrise</string>
+    <string name="sleep_mode_schedule_mixed_sunset">Turns on from sunset to a custom time</string>
+    <string name="sleep_mode_schedule_mixed_sunrise">Turns on from a custom time to sunrise</string>
+    <string name="sleep_mode_toggles_title">Toggles</string>
+    <string name="sleep_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="sleep_mode_wifi_toggle_summary">Disable Wi-Fi when Sleep mode is turned on</string>
+    <string name="sleep_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="sleep_mode_bluetooth_toggle_summary">Disable Bluetooth when Sleep mode is turned on</string>
+    <string name="sleep_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="sleep_mode_cellular_toggle_summary">Disable Mobile data when Sleep mode is turned on</string>
+    <string name="sleep_mode_location_toggle_title">Turn off Location</string>
+    <string name="sleep_mode_location_toggle_summary">Disable Location when Sleep mode is turned on</string>
+    <string name="sleep_mode_sensors_toggle_title">Turn off Sensors</string>
+    <string name="sleep_mode_sensors_toggle_summary">Disable Sensors when Sleep mode is turned on</string>
+    <string name="sleep_mode_idle_toggle_title">Deep Sleep</string>
+    <string name="sleep_mode_idle_toggle_summary">Pauses background activity for user apps while Sleep mode is active. Notifications may be delayed until it ends.</string>
+    <string name="sleep_mode_display_text">Sleep mode allows you to disable certain services to help save battery and silence your phone while you sleep.</string>
+    <!-- Display settings screen, activation button action for manual mode. [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_manual">Turn on now</string>
+    <!-- Display settings screen, deactivation button action for manual mode. [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_manual">Turn off now</string>
+    <!-- Display settings screen, activation button action for sunset-to-sunrise schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_twilight">Turn on until sunrise</string>
+    <!-- Display settings screen, deactivation button action for sunset-to-sunrise schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_twilight">Turn off until sunset</string>
+    <!-- Display settings screen, activation button action for custom schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_custom">Turn on until <xliff:g name="time" example="6 AM">%1$s</xliff:g></string>
+    <!-- Display settings screen, deactivation button action for custom schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_custom">Turn off until <xliff:g name="time" example="10 PM">%1$s</xliff:g></string>
+
+    <!-- Font picker -->
+    <string name="theme_customization_category_title">Theme customization</string>
+    <string name="font_settings_title">Font</string>
+    <string name="font_settings_summary">Customize the system typeface</string>
+    
+    <!-- Custom Font Installer & Picker -->
+    <string name="toast_invalid_font_file">Invalid font file selected</string>
+    <string name="toast_failed_apply_font">Failed to apply font</string>
+    <string name="reset">Reset</string>
+    <string name="font_preview_text">The quick brown fox jumps over the lazy dog.</string>
+    <string name="applied">Applied</string>
+    <string name="add_custom_font">Add custom font</string>
+    <string name="font_preview_dialog_title">Font Preview</string>
+    <string name="add_font">Add font</string>
+    <string name="reboot_required_title">Reboot Required</string>
+    <string name="reboot_required_custom_font_title">Applying a custom font requires a reboot to apply system-wide. Reboot now?</string>
+    <string name="reboot_now">Reboot now</string>
+    <string name="later">Later</string>
+    <string name="reset_default_title">Reset fonts</string>
+    <string name="reset_default_message">This will reset fonts to system default. A reboot is required to finish. Proceed?</string>
+    <string name="systemui_restart_font_message">Restarting SystemUI to apply font changes...</string>
+
+    <!-- App downgrade -->
+    <string name="app_downgrade_title">Allow application downgrade</string>
+    <string name="app_downgrade_summary">Allow downgrading system applications, which may result in crashes and data loss</string>
+    
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Double tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar or lock screen to turn off the screen</string>
+
+    <!-- StatusBar_Brightness_Control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Slide horizontally on the status bar to adjust brightness</string>
+    <string name="status_bar_brightness_control_lockscreen_title">Allow on lock screen</string>
+    <string name="status_bar_brightness_control_lockscreen_summary">Also adjust brightness from the status bar when the device is locked</string>
+
+    <!-- QS auto brightness toggle -->
+    <string name="status_bar_brightness_slider_title">Brightness slider</string>
+    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
+    <string name="qs_brightness_slider_show_never">Don\'t show</string>
+    <string name="qs_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="qs_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_position_title">Brightness slider position</string>
+    <string name="status_bar_brightness_slider_position_top">Top</string>
+    <string name="status_bar_brightness_slider_position_bottom">Bottom</string>
+    <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
+    <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
+
+    <!-- Double tap on home screen to sleep -->
+    <string name="double_tap_sleep_gesture_title">Double tap on homescreen to sleep</string>
+    <string name="double_tap_sleep_gesture_summary">Double tap on the homescreen empty area to turn off the screen</string>
+
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Theming settings</string>
+    <string name="monet_settings_summary">A few extra settings to customize monet engine</string>
+    <string name="monet_settings_sammary">A few extra settings to customize monet engine</string>
+    <string name="theme_style_title">Theme style</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Color source</string>
+    <string name="color_source_both">Both (Default)</string>
+    <string name="color_source_home">Home wallpaper</string>
+    <string name="color_source_lock">Lock wallpaper</string>
+    <string name="color_source_preset">Preset</string>
+    <string name="accent_color_title">Accent Color</string>
+    <string name="accent_color_summary">Override default accent color</string>
+    <string name="accent_background_title">Accent background</string>
+    <string name="accent_background_summary">Choose a different accent color for background</string>
+    <string name="bg_color_title">Background Color</string>
+    <string name="bg_color_summary">Override default background accent color</string>
+    <string name="luminance_factor_title">Luminance</string>
+    <string name="luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="chroma_factor_title">Chroma</string>
+    <string name="chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="tint_background_title">Tint Background</string>
+    <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+
+    <string name="qs_blur_category_title">Shade Appearance</string>
+
+    <string name="dual_tone_shade_title">Use dual-tone shade</string>
+    <string name="dual_tone_shade_summary">Use a secondary background for the notification shade</string>
+
+    <!-- VPN app management screen, global VPN -->
+    <string name="global_vpn_title">Global VPN</string>
+    <string name="global_vpn_summary">Force all traffic on the device through this VPN, including work profile and other users.</string>
+    <string name="global_vpn_summary_on">Force all traffic on the device through this VPN, including work profile and other users. Note: When enabled, you will not be able to use a separate VPN in a work profile or other users</string>
+    <string name="global_vpn_summary_any_vpn_active">You need to disable all active VPN connections first to enable this</string>
+
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Lock screen pattern size -->
+    <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
+    <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+    <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
+
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
+
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="use_power_button_torch_title">Use screen-off quick torch</string>
+    <string name="use_power_button_torch_summary">
+When the screen is off, the torch can be enabled with one of the following key combinations</string>
+    <string name="gesture_power_button_torch_category_title">When the screen is off, the torch is enabled by</string>
+    <string name="gesture_power_button_torch_long_press_title">Long-pressing the power menu button</string>
+    <string name="gesture_power_button_torch_double_tap_title">Quickly pressing the power menu button twice</string>
+    <string name="gesture_double_tap_power_summary_disabled">Disabled by flashlight gesture</string>
+    <string name="double_tap_power_for_torch_summary_disabled">Disabled by open camera gesture</string>
+
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+
+    <!-- Private DNS -->
+    <string name="private_dns_mode_adguard" translatable="false">AdGuard (CY)</string>
+    <string name="private_dns_mode_appliedprivacy" translatable="false">AppliedPrivacy (AT)</string>
+    <string name="private_dns_mode_cira" translatable="false">CIRA (CA)</string>
+    <string name="private_dns_mode_cleanbrowsing" translatable="false">CleanBrowsing (US)</string>
+    <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare (US)</string>
+    <string name="private_dns_mode_cznic" translatable="false">CZ.NIC (CZ)</string>
+    <string name="private_dns_mode_google" translatable="false">Google (US)</string>
+    <string name="private_dns_mode_mullvad" translatable="false">Mullvad (SE)</string>
+    <string name="private_dns_mode_quadnine" translatable="false">Quad9 (CH)</string>
+    <string name="private_dns_mode_restena" translatable="false">Restena (LU)</string>
+    <string name="private_dns_mode_switch" translatable="false">SWITCH (CH)</string>
+    <string name="private_dns_mode_twnic" translatable="false">TW.NIC (TW)</string>
+    <string name="private_dns_mode_uncensoreddns" translatable="false">UncensoredDNS (DK)</string>
+    <string name="private_dns_mode_provider_failure">Couldn\'t connect</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+
+    <!-- Disable QS on secure lockscreen -->
+    <string name="quick_settings_secure_lock_screen_title">Disable QS pull on secure lock screen</string>
+
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
+    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can access them from the lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+
+    <!-- Lock screen interface category -->
+    <string name="lockscreen_interface_category_title">Interface</string>
+
+    <!-- QS Tiles Style -->
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="qs_tile_shape_title">QS tiles shape</string>
+    <string name="qs_tile_shape_dynamic">Dynamic</string>
+    <string name="qs_tile_shape_circle">Circle</string>
+    <string name="qs_tile_shape_rounded_square">Rounded square</string>
+    <string name="qs_tile_shape_custom">Custom</string>
+    <string name="qs_tile_shape_corner_radius_title">Tile corner radius</string>
+
+    <!-- Brightness Slider Style -->
+    <string name="qs_brightness_slider_shape_title">Brightness slider shape</string>
+    <string name="qs_brightness_slider_shape_corner_radius_title">Slider corner radius</string>
+
+    <!-- [CHAR LIMIT=NONE] Settings label. This setting lets the user's apps share intents function between their profiles. The adjective 'Cross-profile' is referring to the work and personal profiles a user has on their phone. -->
+    <string name="cross_profile_sharing_title">Cross-profile sharing</string>
+    <!-- [CHAR LIMIT=NONE] Setting description. If the user turns on this setting, they can share content across their personal and work profiles. -->
+    <string name="cross_profile_sharing_summary">Enable in-app share buttons to work across your personal and work profile</string>
+
+    <!-- Work profile settings screen, setting option to change profile timeout -->
+    <string name="work_hours_title">Work hours</string>
+    <string name="work_hours_end_on_summary">Show a notification to turn off the work profile at <xliff:g id="end_time">%1$s</xliff:g> daily</string>
+    <string name="work_hours_end_off_summary">Show a daily notification to turn off the work profile</string>
+    <string name="work_hours_end_notification_title">End of work day</string>
+    <string name="work_hours_end_notification_description">Tap to turn off work apps</string>
+
+    <!-- Developer Options -->
+    <string name="cleartext_network_policy_title">Restrict cleartext network traffic</string>
+    <string name="cleartext_network_policy_summary">Blocks all non-TLS network traffic. Requires Private DNS configuration. Note: Without explicit exemptions, apps that use cleartext traffic may not work</string>
+
+    <!-- App data usage Datura Firewall link -->
+    <string name="data_usage_app_datura_firewall">Datura Firewall</string>
+    <string name="data_usage_app_datura_firewall_summary">Firewall settings have been moved to the new Firewall app. Tap to open.</string>
+
+    <!-- Other Fragment -->
+    <string name="miscellaneous_settings">Miscellaneous</string>
+    <string name="other_settings">Other options</string>
+    <string name="quick_settings">Quick Settings</string>
+
+    <!-- WiFi Hotspot -->
+    <string name="wifi_hotspot_ap_band_title">AP Band</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Hidden network</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Your mobile hotspot\'s name won\'t appear in the list of available WLAN networks.</string>
+    <string name="wifi_hotspot_client_manager_title">Connected devices</string>
+    <string name="wifi_hotspot_client_manager_summary">List and manage devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">List devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_limit_title">Limit of connected devices</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blocked Devices</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Connected Devices</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Block device</string>
+    <string name="wifi_hotspot_block_client_dialog_text">This action will disconnect \"<xliff:g id="device_name">%1$s</xliff:g>\" from this device and add it to blocklist</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Unblock device</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">The device \"<xliff:g id="device_name">%1$s</xliff:g>\" will be able to connect to this hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">No clients are currently available. Connected and blocked devices will be listed here when available.</string>
+    <string name="wifi_band_24ghz_and_5ghz">2.4 GHz &amp; 5 GHz</string>
+    <string name="wifi_band_24ghz_and_6ghz">2.4 GHz &amp; 6 GHz</string>
+    <string name="wifi_band_60ghz" translatable="false">60 GHz</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Up to <xliff:g id="device_num">%1$d</xliff:g> devices can connect to this hotspot</item>
+        <item quantity="one">Up to <xliff:g id="device_num">%1$d</xliff:g> device can connect to this hotspot</item>
+    </plurals>
+
+    <string name="custom_timeout_summary_never">Never</string>
+    <string name="custom_timeout_summary_30secs">30 seconds</string>
+    <string name="custom_timeout_summary_1min">1 minute</string>
+    <string name="custom_timeout_summary_5mins">5 minutes</string>
+    <string name="custom_timeout_summary_10mins">10 minutes</string>
+    <string name="custom_timeout_summary_30mins">30 minutes</string>
+    <string name="custom_timeout_summary_1hour">1 hour</string>
+
+    <!-- hotspot data limit -->
+    <string name="one_time_data_limit_title">One-time data limit</string>
+    <string name="one_time_data_limit_size">Size</string>
+    <string name="one_time_data_limit_when_exceeded">When exceeded</string>
+    <string name="one_time_data_limit_turn_off_notify">Turn off and notify</string>
+    <string name="one_time_data_limit_notify_only">Notify only</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
+    <!-- Per-channel vibration pattern -->
+    <string name="notification_custom_vibrate_title">Custom vibration pattern</string>
+    <string name="notification_custom_vibrate_summary">Replaces the default pattern only\nApp set pattern takes precedence</string>
+    <string name="notification_custom_vibrate_slider1">Vibrate for</string>
+    <string name="notification_custom_vibrate_slider2">Pause for</string>
+
+    <!-- Vibration patterns -->
+    <!-- Units -->
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_pixels">dp</string>
+    <string name="unit_hz">hz</string>
+
+    <string name="vibration_pattern_title">Ringtone vibration pattern</string>
+    <string name="notification_vibration_pattern_title">Notification vibration pattern</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="pattern_custom">Custom</string>
+    <string name="custom_vibration_pattern_title">Custom pattern</string>
+    <string name="custom_vibration_pattern_summary">Set a custom vibration pattern</string>
+
+    <!-- Long press navbar to search -->
+    <string name="navbar_long_press_gesture_title">Long press to search</string>
+    <string name="navbar_long_press_gesture_summary">Touch and hold the Home button or the navigation handle to search using the content on your screen</string>
+
+    <!-- Circle to search -->
+    <string name="search_all_entrypoints_enabled_title">Circle to Search</string>
+    <string name="search_all_entrypoints_enabled_summary">Use CTS instead of Google Lens for navbar long press</string>
+
+    <!-- QS layout settings -->
+    <string name="qs_layout_columns_rows_title">QS columns &amp; rows</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qqs_rows_portrait_title">Quick QS rows (portrait)</string>
+    <string name="qqs_rows_landscape_title">Quick QS rows (landscape)</string>
+
+    <!-- QS customization page -->
+    <string name="qs_customization_title">Quick Settings customization</string>
+    <string name="qs_customization_summary">Tweak QS tiles, styles, and layout</string>
+    <string name="qs_default_tiles_category">Modern tiles</string>
+    <string name="qs_default_tiles_summary">Configure the modern tile appearance</string>
+    <string name="qs_classic_tiles_category">Classic tiles</string>
+    <string name="qs_classic_tiles_summary">Android 11-style classic tile appearance</string>
+    <string name="qs_columns_rows_category">QS columns &amp; rows</string>
+
+    <!-- QS tile style -->
+    <string name="qs_panel_style_title">Classic QS panel style</string>
+    <string name="qs_panel_style_summary">Use classic Android 11-style QS tile layout</string>
+    <string name="qs_tile_label_hide_title">Hide tile labels</string>
+    <string name="qs_tile_label_hide_summary">Hide labels on QS tiles in classic style</string>
+    <string name="qs_tile_icon_shape_title">Tile icon shape</string>
+    <string name="qs_tile_icon_shape_default">System default</string>
+    <string name="qs_tile_icon_shape_teardrop">Teardrop</string>
+    <string name="qs_tile_icon_shape_circle">Circle</string>
+    <string name="qs_tile_icon_shape_rounded_square">Rounded square</string>
+    <string name="qs_tile_icon_shape_square">Square</string>
+    <string name="qs_tile_icon_shape_hexagon">Hexagon</string>
+    <string name="qs_tile_icon_shape_cylinder">Cylinder</string>
+    <string name="qs_tile_icon_shape_flower">Flower</string>
+    <string name="qs_tile_icon_shape_star">Star</string>
+    <string name="qs_tile_icon_shape_vessel">Vessel</string>
+    <string name="qs_tile_icon_shape_heart">Heart</string>
+    <string name="qs_tile_icon_shape_squircle">Squircle</string>
+    <string name="qs_classic_tile_icon_size_title">Classic tile icon size</string>
+    <string name="qs_classic_tile_icon_size_summary">Adjust the icon size for classic QS tiles</string>
+    <string name="qs_classic_tile_row_spacing_title">Classic tile row spacing</string>
+    <string name="qs_classic_tile_row_spacing_summary">Adjust the vertical spacing between rows in classic mode</string>
+
+    <!-- QS Widget Panel -->
+    <string name="qs_widget_panel_title">Show widget in QS panel</string>
+    <string name="qs_widget_panel_summary">Show media, volume and brightness widget in quick settings panel</string>
+    <string name="qs_widget_slider_corner_title">Widget slider style</string>
+    <string name="qs_widget_slider_corner_summary">Choose the visual style for vertical sliders in the QS widget</string>
+
+    <!-- Lock screen media art -->
+    <string name="ls_media_art_title">Media cover art</string>
+    <string name="ls_media_art_summary">Display media cover art when available</string>
+    <string name="ambient_media_art_title">Ambient media cover art</string>
+    <string name="ambient_media_art_summary">Display media cover art on Ambient display when available</string>
+    <string name="ls_media_art_aod_dim_level_title">AOD dim level</string>
+    <string name="ls_media_art_filter_title">Media cover art filter</string>
+    <string name="ls_media_art_filter_summary">Choose visual filter for media art</string>
+    <string name="ls_media_art_filter_none">None</string>
+    <string name="ls_media_art_filter_blur">Blur</string>
+    <string name="ls_media_art_filter_grayscale">Grayscale</string>
+    <string name="ls_media_art_filter_sepia">Sepia</string>
+    <string name="ls_media_art_filter_tint">Accent tinted</string>
+    <string name="ls_media_art_filter_invert">Invert</string>
+    <string name="ls_media_art_filter_grayblur">Grayscale and blur</string>
+    <string name="ls_media_art_filter_pixelation">Pixelation/Mosaic effect</string>
+    <string name="ls_media_art_pixel_size_title">Media art pixel size</string>
+    <string name="ls_media_art_pixel_size_summary">Adjust the pixel size for media artwork displayed on the lock screen</string>
+    <string name="ls_media_art_fade_level_title">Media cover art fade level</string>
+    <string name="ls_media_art_fade_level_summary">Set media cover art fade level</string>
+    <string name="ls_media_art_blur_level_title">Media art blur level</string>
+    <string name="ls_media_art_blur_level_summary">Blur intensity when blur filter is applied</string>
+
+    <!-- Pulse visualizer -->
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_title">Pulse Visualizer</string>
+    <string name="pulse_settings_summary">Show a bar visualizer on the lock screen while music is playing</string>
+    <string name="pulse_show_on_ambient_title">Show on ambient display</string>
+    <string name="pulse_show_on_ambient_summary">Display visualizer on always-on display and ambient mode. Disable to show only on lockscreen.</string>
+    <string name="pulse_rounded_bars_title">Rounded bars</string>
+    <string name="pulse_rounded_bars_summary">Display visualizer bars with rounded corners</string>
+    <string name="pulse_color">Visualizer color</string>
+    <string name="pulse_color_lavalamp">Lavalamp</string>
+    <string name="pulse_color_album">Album art</string>
+    <string name="pulse_color_accent">Accent color</string>
+    <string name="pulse_bar_count_title">Number of bars</string>
+    <string name="pulse_bar_count_summary">Set how many bars are shown in the visualizer</string>
+    <string name="pulse_bar_count_units">bars</string>
+    <string name="pulse_renderer">Visualizer style</string>
+    <string name="pulse_renderer_solid">Solid lines</string>
+    <string name="pulse_renderer_fading">Fading blocks</string>
+    <string name="pulse_renderer_neon_glow">Neon Glow</string>
+    <string name="pulse_renderer_retro_vu_meter">Retro VU Meter</string>
+    <string name="pulse_renderer_minimal_wave">Minimal Wave</string>
+    <string name="pulse_renderer_sparkle">Sparkle</string>
+    <string name="pulse_renderer_matrix">Matrix</string>
+    <string name="custom_color">Custom color</string>
+    <string name="pulse_height_multiplier_title">Pulse height</string>
+    <string name="pulse_height_multiplier_summary">Adjust the visualization height</string>
+
+    <!-- Lockscreen clock hide -->
+    <string name="ls_clock_hide_title">Hide clock</string>
+    <string name="ls_clock_hide_summary">Hide the classic clock on the lock screen entirely, Helpful when using a custom apps for lockscreen customization like kwgt or others</string>
+
+    <!-- Custom clock style -->
+    <string name="lockscreen_custom_clock_style_title">Custom clock style</string>
+    <string name="lockscreen_custom_clock_style_summary">Configure lock screen clock styles</string>
+    <string name="lockscreen_custom_clock_style_highlight_text">Swipe left or right to preview clock styles</string>
+    <string name="lockscreen_custom_clock_style_info">Custom clock style replaces AOSP clock styles with custom clocks. Smartspace will be disabled. You can enable and use custom weather instead.</string>
+    <string name="lockscreen_custom_clock_opacity_title">Custom clock opacity</string>
+    <string name="lockscreen_custom_clock_opacity_summary">Adjust the transparency of custom clock style</string>
+    <string name="lockscreen_custom_clock_frame_margin_top_title">Custom clock height</string>
+    <string name="lockscreen_custom_clock_frame_margin_top_summary">Adjust the height of custom clock style</string>
+    <string name="lockscreen_custom_clock_color_mode_title">Custom clock color mode</string>
+    <string name="lockscreen_custom_clock_size_title">Clock size</string>
+    <string name="lockscreen_custom_clock_size_summary">Scale the lock screen clock (50–150%)</string>
+    <string name="lockscreen_custom_clock_aod_anim_title">Custom clock AOD animation</string>
+    <string name="lockscreen_custom_clock_aod_anim_summary">Set AOD animation for custom clock style</string>
+    <string name="custom_color_summary">Custom color some clock styles</string>
+    <string name="default_value">Default</string>
+
+    <!-- Lockscreen clock: album art color override -->
+    <string name="clock_album_art_color_title">Album art color clocks</string>
+    <string name="clock_album_art_color_summary">Override clock color with the album art palette when media is playing</string>
+
+    <!-- Lockscreen clock -->
+    <string name="theme_customization_lock_clock_title">Clock font style</string>
+    <string name="lock_screen_interface_category">Interface</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_yes">Yes</string>
+    <string name="systemui_restart_not_now">Not now</string>
+    <string name="systemui_restart_process">Restarting SystemUI to apply changes...</string>
+
+    <!-- Network & Internet - Data usage -->
+    <string name="qs_show_data_usage_title">Show data usage</string>
+    <string name="qs_show_data_usage_summary">Display data usage summary in the Quick Settings footer</string>
+    <string name="qs_show_data_usage_window_title">Data usage window</string>
+    <string name="qs_show_data_usage_window_daily">Daily</string>
+    <string name="qs_show_data_usage_window_weekly">Weekly</string>
+
+    <!-- App Lock settings -->
+    <string name="app_lock_title">App lock</string>
+    <string name="app_lock_summary">Protect apps using your device credential</string>
+    <string name="app_lock_search_placeholder">Search apps…</string>
+    <string name="app_lock_show_system">Show system apps</string>
+    <string name="app_lock_dashboard_card_title">App Lock</string>
+    <string name="app_lock_dashboard_card_summary_none">No apps protected</string>
+    <string name="app_lock_dashboard_card_summary_multiple"><xliff:g id="count" example="3">%d</xliff:g> apps protected</string>
+    <string name="app_lock_not_secure_title">Set a screen lock</string>
+    <string name="app_lock_not_secure_summary">To use App Lock, you need to first set a secure screen lock (PIN, pattern, or password) in Settings.</string>
+    <string name="app_lock_not_secure_button">Set screen lock</string>
+    <string name="app_lock_timeout_title">Lock timeout</string>
+    <string name="app_lock_timeout_summary">Choose when to lock protected apps</string>
+    <string name="app_lock_timeout_immediately">Immediately</string>
+    <string name="app_lock_timeout_5s">5 seconds (Default)</string>
+    <string name="app_lock_timeout_30s">30 seconds</string>
+    <string name="app_lock_timeout_1m">1 minute</string>
+    <string name="app_lock_timeout_5m">5 minutes</string>
+    <string name="app_lock_timeout_screen_lock">Only when screen locks</string>
+
+    <!-- App Lock custom credential settings strings -->
+    <string name="app_lock_settings_title">App lock settings</string>
+    <string name="app_lock_settings_summary">Configure lock timeout and credential authentication method</string>
+    <string name="app_lock_method_title">App lock method</string>
+    <string name="app_lock_method_device_lock">Device Lock</string>
+    <string name="app_lock_method_device_lock_summary">Use system screen lock PIN/Pattern/Password &amp; Biometrics</string>
+    <string name="app_lock_method_pin">PIN</string>
+    <string name="app_lock_method_pin_summary">4-digit code</string>
+    <string name="app_lock_method_password">Password</string>
+    <string name="app_lock_method_password_summary">Alphanumeric password</string>
+    <string name="app_lock_method_pattern">Pattern</string>
+    <string name="app_lock_method_pattern_summary">Draw pattern to unlock</string>
+    <string name="app_lock_setup_pin_title">Set App Lock PIN</string>
+    <string name="app_lock_confirm_pin_title">Confirm App Lock PIN</string>
+    <string name="app_lock_setup_password_title">Set App Lock Password</string>
+    <string name="app_lock_confirm_password_title">Confirm App Lock Password</string>
+    <string name="app_lock_setup_pattern_title">Draw App Lock Pattern</string>
+    <string name="app_lock_confirm_pattern_title">Confirm App Lock Pattern</string>
+    <string name="app_lock_credential_mismatch">Credentials do not match. Try again.</string>
+    <string name="app_lock_credential_incorrect">Incorrect PIN, Password, or Pattern.</string>
+    <string name="app_lock_biometrics_title">Allow Biometrics</string>
+    <string name="app_lock_biometrics_summary">Unlock locked apps using fingerprint or face unlock when custom lock is enabled</string>
+
+    <!-- Reality Display Engine -->
+    <string name="display_engine_category">Display engine</string>
+    <string name="display_engine_mode_title">Reality display engine</string>
+    <string name="x_reality_engine_mode_title">X-Reality engine</string>
+    <string name="vivid_engine_mode_title">Vivid display</string>
+    <string name="triluminous_engine_mode_title">Triluminous display</string>
+    <string name="natural_engine_mode_title">Natural display</string>
+    <string name="cinema_engine_mode_title">Cinema display</string>
+    <string name="reading_engine_mode_title">Comfort display (Reading mode)</string>
+    <string name="display_engine_default">Default</string>
+    <string name="display_engine_mode_footer_text">Inspired by Sony\'s Bravia/X-Reality engine, the Display Engine features Vivid mode for enhanced brightness and color saturation, X-Reality mode for improved detail and color accuracy, and Triluminous mode for a wider color range.</string>
+
+    <!-- Volume Panel Orientation -->
+    <string name="volume_panel_location_title">Volume panel orientation</string>
+    <string name="volume_panel_location_right">Right (default)</string>
+    <string name="volume_panel_location_left">Left</string>
+
+    <!-- Theme / Wallpaper & Effects Settings -->
+    <string name="theme_settings_title">Wallpaper &amp; effects</string>
+    <string name="theme_settings_summary">Lock Glymps, visual effects, and video wallpapers</string>
+
+    <!-- General -->
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="boot_animation_applied">Boot animation applied</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="delete_message">Remove selected item?</string>
+    <string name="choose_app">Choose app</string>
+
+    <!-- Wallpaper Glymps -->
+    <string name="lock_glymps_title">Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_title">Enable Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_summary">Change wallpaper every time screen lights up</string>
+    <string name="lock_glymps_wallpaper_target_title">Wallpaper apply to</string>    
+    <string name="lock_glymps_source_category">Wallpaper Source</string>
+    <string name="lock_glymps_source_title">Wallpaper source</string>
+    <string name="lock_glymps_source_summary">Choose where to get wallpapers from</string>
+    
+    <string name="lock_glymps_custom_urls_title">Manage custom URLs</string>
+    <string name="lock_glymps_custom_urls_summary">Add or remove custom wallpaper URLs</string>
+    
+    <string name="lock_glymps_folder_title">Local folder</string>
+    <string name="lock_glymps_folder_summary">View folder location and wallpaper count (Max 10 wallpapers)</string>
+    
+    <string name="lock_glymps_download_category">Download Settings</string>
+    <string name="lock_glymps_wifi_only_title">WiFi only</string>
+    <string name="lock_glymps_wifi_only_summary">Download wallpapers only when connected to WiFi</string>
+    
+    <string name="lock_glymps_cache_size_title">Cache size</string>
+    <string name="lock_glymps_cache_size_summary">Number of wallpapers to pre-download</string>
+    
+    <string name="lock_glymps_advanced_category">Advanced</string>
+    <string name="lock_glymps_clear_cache_title">Clear cache</string>
+    <string name="lock_glymps_clear_cache_summary">Remove all cached wallpapers</string>
+
+    <string name="lock_glymps_behavior_category">Behavior</string>
+    <string name="lock_glymps_change_on_title">Change wallpaper on</string>
+    <string name="lock_glymps_change_on_summary">When to change the screen wallpaper</string>
+
+    <string name="lock_glymps_timer_interval_title">Timer interval</string>
+    <string name="lock_glymps_timer_interval_summary">How often to change wallpaper automatically</string>
+    
+    <!-- Footer -->
+    <string name="lock_glymps_footer_title">Important Information</string>
+    <string name="lock_glymps_footer_text">📁 Local folder: /sdcard/Glymps\n\n⚠️ Low-end devices may experience slight lag\n\n🎨 Tip: Use Custom Accent in Monet Settings for stable colors</string>
+
+    <!-- Preview strings -->
+    <string name="lock_glymps_preview_category">Current Wallpapers</string>
+    <string name="lock_glymps_preview_title">Wallpaper Preview</string>
+    <string name="lock_glymps_preview_summary">Current lock and home screen wallpapers</string>
+    <string name="lock_glymps_lock_screen">Lock Screen</string>
+    <string name="lock_glymps_home_screen">Home Screen</string>
+    <string name="lock_glymps_apply_now">Apply New Wallpaper</string>
+    <string name="lock_glymps_applying">Applying...</string>
+    <string name="lock_glymps_lock_preview_desc">Lock screen wallpaper preview</string>
+    <string name="lock_glymps_home_preview_desc">Home screen wallpaper preview</string>
+
+    <!-- Wallpaper Styles -->
+    <string name="wallpaper_settings_title">Wallpaper styles</string>
+    <string name="wallpaper_settings_summary">Configure wallpaper styles and settings</string>
+
+    <!-- Themes/Monet Engine -->
+    <string name="monet_engine_custom_color_title">Accent color</string>
+    <string name="monet_engine_custom_color_summary">Choose custom color for accent</string>
+    <string name="monet_engine_custom_bgcolor_title">Background color</string>
+    <string name="monet_engine_custom_bgcolor_summary">Choose custom color for background</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_luminance_factor_title">Luminance</string>
+    <string name="monet_engine_luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="monet_engine_whole_palette_title">Whole palette</string>
+    <string name="monet_engine_whole_palette_summary">Make Luminance and Chroma selection affect secondary colors as well</string>
+    <string name="monet_engine_tint_background_title">Tint background</string>
+    <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+    <string name="monet_engine_style_title">Theme style</string>
+    <string name="monet_engine_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="monet_engine_style_vibrant">Vibrant</string>
+    <string name="monet_engine_style_expressive">Expressive</string>
+    <string name="monet_engine_style_spritz">Spritz</string>
+    <string name="monet_engine_style_rainbow">Rainbow</string>
+    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
+    <string name="monet_engine_style_content">Content</string>
+    <string name="monet_engine_style_monochromatic">Monochromatic</string>
+    <string name="monet_engine_color_source_title">Color source</string>
+    <string name="monet_engine_color_source_both">Both (Default)</string>
+    <string name="monet_engine_color_source_home">Home wallpaper</string>
+    <string name="monet_engine_color_source_lock">Lock wallpaper</string>
+    <string name="monet_engine_color_source_preset">Preset</string>
+    
+    <!-- Wallpaper Settings Titles -->
+    <string name="wallpaper_blur_title">Wallpaper Blur Effect</string>
+    <string name="wallpaper_blur_filter">Wallpaper Blur Type</string>
+    <string name="wallpaper_effects_title">Wallpaper Visual Effects</string>
+    <string name="wallpaper_effect_type_title">Wallpaper Effect Type</string>
+    <string name="wallpaper_effect_target_title">Apply effect to</string>
+    <string name="wallpaper_dim_title">Wallpaper Dim Effect</string>
+    <string name="wallpaper_dim_level_title">Wallpaper Dim Level</string>
+    <string name="glass_blur">Glass blur</string>
+    <string name="frosted_blur">Frosted blur</string>
+    <string name="wallpaper_dim_level_summary">Configure wallpaper dim level</string>
+    <string name="wallpaper_styles_footer">For wallpaper styles to work effectively, users must set the wallpapers for the lock screen and home screen at different times.\nThe same wallpaper can be used, but it should not be applied to both the lock screen and home screen at the same time.\nThis is optional when using the BOTH OPTION for wallpaper blur and dim styles.</string>
+    <string name="wallpaper_performance_warning">⚠ Performance Notice: These visual effects are resource-intensive and may impact performance on low-end devices. For optimal experience, use on mid-range or flagship devices.\nEffects may cause lag, battery drain, or stuttering on older phones.</string>
+    
+    <!-- Effect Titles -->
+    <string name="wallpaper_saturation_title">Saturation Level</string>
+    <string name="wallpaper_saturation_summary">Boost or reduce color intensity</string>
+    <string name="wallpaper_pixelation_size_title">Pixelation Size</string>
+    <string name="wallpaper_pixelation_size_summary">Larger values = more pixelated</string>
+    <string name="wallpaper_vignette_intensity_title">Vignette Intensity</string>
+    <string name="wallpaper_vignette_intensity_summary">Darkness of edges</string>
+    <string name="wallpaper_posterize_levels_title">Posterize Levels</string>
+    <string name="wallpaper_posterize_levels_summary">Color depth reduction</string>
+
+    <string name="video_wallpaper_title">Video Wallpaper</string>
+
+    <!-- Category -->
+    <string name="video_wallpaper_category">Wallpaper customization</string>
+    <string name="video_wallpaper_category_title">Video Wallpaper</string>
+    <string name="video_wallpaper_category_summary">Set animated wallpapers (MP4, GIF, WebP)</string>
+
+    <!-- Preferences -->
+    <string name="video_wallpaper_current_title">Current wallpaper</string>
+    <string name="video_wallpaper_current_summary">No video wallpaper selected</string>
+
+    <string name="video_wallpaper_pick_title">Select video/GIF</string>
+    <string name="video_wallpaper_pick_summary">Choose a video or animated image</string>
+
+    <string name="video_wallpaper_enable_title">Enable video wallpaper</string>
+    <string name="video_wallpaper_enable_summary">Apply the selected video as live wallpaper</string>
+
+    <string name="video_wallpaper_clear_title">Clear video wallpaper</string>
+    <string name="video_wallpaper_clear_summary">Remove the current video wallpaper</string>
+
+    <string name="video_wallpaper_playback">Playback Settings</string>
+    
+    <string name="video_wallpaper_speed">Playback speed</string>
+    
+    <string name="video_wallpaper_pause_lock">Pause on lock screen</string>
+    <string name="video_wallpaper_pause_lock_summary">Save battery when screen is locked</string>
+
+    <!-- Info section -->
+    <string name="video_wallpaper_info_category_title">Information</string>
+    <string name="video_wallpaper_info_title">Supported formats</string>
+    <string name="video_wallpaper_info_summary">MP4 videos, GIF and WebP animations\nMaximum file size: 50MB</string>
+
+    <string name="video_wallpaper_tips_title">Tips</string>
+    <string name="video_wallpaper_tips_summary">• Videos are muted automatically\n• Lower resolution videos use less battery\n• Shorter loops are recommended for better performance\n• If videos wallpaper doesnt load select live wallpaper from Wallpaper and style after selecting video wallpaper\n• You have to reapply live wallpaper after restart device</string>
+
+    <string name="video_wallpaper_description">Animated video and GIF wallpaper</string>
+    <string name="lunaris_os">GHOST</string>
+
+    <!-- Video Wallpaper Strings -->
+    <string name="video_wallpaper_cleared">Video wallpaper cleared</string>
+    <string name="video_wallpaper_clear_failed">Failed to clear video wallpaper</string>
+    <string name="video_wallpaper_current_summary_dynamic">%1$s • %2$s</string>
+    <string name="video_wallpaper_current_none">No video wallpaper selected</string>
+    <string name="video_wallpaper_select_first">Please select a video wallpaper first</string>
+    <string name="video_wallpaper_select_wallpaper">Select video wallpaper</string>
+    <string name="video_wallpaper_save_failed">Failed to save selected video or image</string>
+    <string name="video_wallpaper_apply_prompt">Apply the selected video wallpaper manually from the preview screen</string>
+    <string name="video_wallpaper_enable_failed">Failed to enable video wallpaper</string>
+    <string name="video_wallpaper_picker_error">Unable to open picker. Please try again.</string>
+    <string name="video_wallpaper_processing">Processing selected file...</string>
+    <string name="video_wallpaper_saved">Video wallpaper saved successfully</string>
+    <string name="explore">Explore</string>
+    <string name="discover_new_wallpapers">Discover saved wallpapers</string>
+    <string name="apply">Apply</string>
+    <string name="close">Close</string>
+
+    <!-- QS Widget Tiles -->
+    <string name="qs_widget_show_tiles_title">Show widget tiles</string>
+    <string name="qs_widget_show_tiles_summary">Display top 2 extended tiles inside the widget panel</string>
+    <string name="qs_widget_tile_1_title">First widget tile</string>
+    <string name="qs_widget_tile_2_title">Second widget tile</string>
+
+    <!-- Per-app configs -->
+    <string name="per_app_config_empty_text">No installed apps support current settings</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="per_app_refresh_rate_title">Per-app refresh rate config</string>
+    <string name="per_app_refresh_rate_summary">Configure refresh rate individually for each apps</string>
+    <string name="per_app_refresh_rate_default">Follow system</string>
+
+    <!-- Screen refresh rate -->
+    <string name="screen_refresh_rate_title">Screen refresh rate</string>
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+    <string name="battery_saver_refresh_rate_title">Reduce refresh rate</string>
+    <string name="battery_saver_refresh_rate_summary">Use 60 Hz screen refresh rate to save power when Battery Saver is on</string>
+    <string name="battery_saver_refresh_rate_disabled_summary">Extreme refresh rate is on</string>
+
+    <!-- Extreme refresh rate -->
+    <string name="extreme_refresh_rate_title">Extreme refresh rate</string>
+    <string name="extreme_refresh_rate_summary">Force highest refresh rate for all apps</string>
+    <string name="extreme_refresh_rate_warning">This will ensure system select highest refresh rate, ignoring user selected and app preferred options. Apps that require specific refresh rate may run abnormally.</string>
+
+    <!-- Confirm dialog -->
+    <string name="confirm_before_enable_title">Continue to enable?</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
+
+    <!-- Expressive QR -->
+    <string name="wifi_qr_code_animation_control">pause the animation</string>
+
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca_title">Carrier aggregation</string>
+    <string name="force_lte_ca_summary">Enhances LTE bandwidth by aggregating supported bands</string>
+
+    <!-- Multi Audio Focus -->
+    <string name="multi_audio_focus_title">Multi audio focus</string>
+    <string name="multi_audio_focus_summary">Allow multiple apps to play audio simultaneously</string>
+</resources>
+
+
+
+
+

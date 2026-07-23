@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ls_media_art_title">
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="ls_media_art_enabled"
+        android:title="@string/ls_media_art_title"
+        android:summary="@string/ls_media_art_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="ls_media_art_aod_enabled"
+        android:title="@string/ambient_media_art_title"
+        android:summary="@string/ambient_media_art_summary"
+        android:dependency="ls_media_art_enabled"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="ls_media_art_aod_dim_level"
+        android:title="@string/ls_media_art_aod_dim_level_title"
+        android:max="100"
+        android:min="0"
+        android:defaultValue="35"
+        android:dependency="ls_media_art_aod_enabled"
+        app:interval="1"
+        settings:units="%" />
+
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="ls_media_art_filter"
+        android:title="@string/ls_media_art_filter_title"
+        android:summary="@string/ls_media_art_filter_summary"
+        android:entries="@array/ls_media_art_filter_entries"
+        android:entryValues="@array/ls_media_art_filter_values"
+        android:dependency="ls_media_art_enabled"
+        android:defaultValue="1" />
+
+    <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="ls_media_art_pixel_size"
+        android:title="@string/ls_media_art_pixel_size_title"
+        android:summary="@string/ls_media_art_pixel_size_summary"
+        android:max="45"
+        android:min="5"
+        android:defaultValue="20"
+        android:dependency="ls_media_art_enabled" />
+
+    <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="ls_media_art_fade_level"
+        android:title="@string/ls_media_art_fade_level_title"
+        android:summary="@string/ls_media_art_fade_level_summary"
+        android:max="100"
+        android:min="0"
+        android:defaultValue="40"
+        android:dependency="ls_media_art_enabled"
+        app:interval="1"
+        settings:units="%" />
+
+    <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="ls_media_art_blur_level"
+        android:title="@string/ls_media_art_blur_level_title"
+        android:summary="@string/ls_media_art_blur_level_summary"
+        android:max="200"
+        android:min="0"
+        android:defaultValue="90"
+        android:dependency="ls_media_art_enabled"
+        app:interval="1" />
+
+</PreferenceScreen>

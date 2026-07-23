@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/pulse_settings_title">
+
+    <com.android.settings.custom.preference.SecureSettingMainSwitchPreference
+        android:key="lockscreen_pulse_enabled"
+        android:title="@string/enable_text"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="pulse_show_on_ambient"
+        android:title="@string/pulse_show_on_ambient_title"
+        android:summary="@string/pulse_show_on_ambient_summary"
+        android:defaultValue="true"
+        android:dependency="lockscreen_pulse_enabled" />
+
+    <com.android.settings.custom.preference.SecureSettingListPreference
+        android:key="pulse_renderer"
+        android:title="@string/pulse_renderer"
+        android:summary="%s"
+        android:dialogTitle="@string/pulse_renderer"
+        android:entries="@array/pulse_renderer_entries"
+        android:entryValues="@array/pulse_renderer_values"
+        android:defaultValue="solid"
+        android:dependency="lockscreen_pulse_enabled" />
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="pulse_rounded_bars"
+        android:title="@string/pulse_rounded_bars_title"
+        android:summary="@string/pulse_rounded_bars_summary"
+        android:defaultValue="false"
+        android:dependency="lockscreen_pulse_enabled" />
+
+    <com.android.settings.custom.preference.SecureSettingListPreference
+        android:key="pulse_color"
+        android:title="@string/pulse_color"
+        android:summary="%s"
+        android:dialogTitle="@string/pulse_color"
+        android:entries="@array/pulse_color_entries"
+        android:entryValues="@array/pulse_color_values"
+        android:defaultValue="lavalamp"
+        android:dependency="lockscreen_pulse_enabled" />
+
+    <Preference
+        android:key="pulse_custom_color"
+        android:title="@string/custom_color"
+        android:dependency="lockscreen_pulse_enabled" />
+
+    <com.android.settings.custom.preference.SecureSettingSeekBarPreference
+        android:key="pulse_bar_count"
+        android:title="@string/pulse_bar_count_title"
+        android:summary="@string/pulse_bar_count_summary"
+        android:defaultValue="32"
+        android:max="64"
+        android:dependency="lockscreen_pulse_enabled"
+        app:interval="4"
+        settings:min="8"
+        settings:units="@string/pulse_bar_count_units" />
+
+    <com.android.settings.custom.preference.SecureSettingSeekBarPreference
+        android:key="pulse_height_multiplier"
+        android:title="@string/pulse_height_multiplier_title"
+        android:summary="@string/pulse_height_multiplier_summary"
+        android:defaultValue="100"
+        android:max="200"
+        android:dependency="lockscreen_pulse_enabled"
+        app:interval="5"
+        settings:min="25"
+        settings:units="%" />
+
+</PreferenceScreen>

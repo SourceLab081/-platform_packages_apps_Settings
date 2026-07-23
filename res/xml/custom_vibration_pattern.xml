@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/vibration_pattern_title"
+    android:key="custom_vibration_pattern">
+
+    <!-- Custom ringtone vibration pattern 1 -->
+    <com.android.settings.custom.preference.CustomSeekBarPreference
+        android:key="custom_vibration_pattern1"
+        android:order="-123"
+        android:max="1000"
+        settings:min="0"
+        settings:interval="10"
+        settings:units="@string/unit_milliseconds"/>
+
+    <!-- Custom ringtone vibration pattern 2 -->
+    <com.android.settings.custom.preference.CustomSeekBarPreference
+        android:key="custom_vibration_pattern2"
+        android:order="-122"
+        android:max="1000"
+        settings:min="0"
+        settings:interval="10"
+        settings:units="@string/unit_milliseconds"/>
+
+    <!-- Custom ringtone vibration pattern 3 -->
+    <com.android.settings.custom.preference.CustomSeekBarPreference
+        android:key="custom_vibration_pattern3"
+        android:order="-121"
+        android:max="1000"
+        settings:min="0"
+        settings:interval="10"
+        settings:units="@string/unit_milliseconds"/>
+
+</PreferenceScreen>

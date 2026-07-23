@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+
+    <!-- card colors switches automatically (monnet based) -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@android:color/system_accent1_900"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Logo watermark -->
+            <ImageView
+                android:id="@+id/rom_logo_icon"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-40dp"
+                android:layout_marginEnd="-40dp"
+                android:src="@drawable/ic_rom_logo"
+                android:alpha="0.10"
+                android:scaleType="fitCenter"
+                android:contentDescription="@null"/>
+
+            <!-- Android version -->
+            <TextView
+                android:id="@+id/android_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:text="Android 17"
+                android:textColor="@android:color/system_accent1_200"
+                android:textSize="12sp"/>
+
+            <!-- OFFICIAL status -->
+            <TextView
+                android:id="@+id/build_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:text="OFFICIAL"
+                android:textColor="@android:color/system_accent1_200"
+                android:textSize="12sp"
+                android:letterSpacing="0.08"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Main text block: Title / Subtitle -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rom_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASCP v5.5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/device_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="POCO F4 | Redmi K40S"
+                    android:textColor="@android:color/system_accent1_200"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

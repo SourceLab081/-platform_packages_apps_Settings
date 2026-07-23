@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 kenway214
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="theme_settings_screen"
+    android:title="@string/theme_settings_title">
+
+    <Preference
+        android:key="lock_glymps_settings"
+        android:title="@string/lock_glymps_title"
+        android:summary="@string/lock_glymps_enable_summary"
+        android:fragment="com.android.settings.themes.LockGlympsSettings" />
+
+    <Preference
+        android:key="wallpaper_settings"
+        android:title="@string/wallpaper_settings_title"
+        android:summary="@string/wallpaper_settings_summary"
+        android:fragment="com.android.settings.themes.Wallpaper" /> 
+
+    <Preference
+        android:key="video_wallpaper"
+        android:title="@string/video_wallpaper_category_title"
+        android:summary="@string/video_wallpaper_category_summary"
+        android:fragment="com.android.settings.themes.VideoWallpaperFragment" />          
+</PreferenceScreen>

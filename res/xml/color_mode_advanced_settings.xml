@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2017 The Android Open Source Project
+  Copyright (C) 2026 kenway214
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="color_mode_advanced_settings_screen"
+    android:title="@string/color_mode_advanced_category">
+
+    <PreferenceCategory
+        android:key="advanced_category"
+        android:title="@string/color_mode_advanced_category"
+        android:order="100">
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_balance_red"
+            android:title="@string/color_mode_balance_red"
+            android:persistent="false"
+            android:defaultValue="255"
+            android:max="255"
+            settings:min="25"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:keywords="@string/keywords_color_balance"
+            settings:controller="com.android.settings.display.ColorBalancePreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_balance_green"
+            android:title="@string/color_mode_balance_green"
+            android:persistent="false"
+            android:defaultValue="255"
+            android:max="255"
+            settings:min="25"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:keywords="@string/keywords_color_balance"
+            settings:controller="com.android.settings.display.ColorBalancePreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_balance_blue"
+            android:title="@string/color_mode_balance_blue"
+            android:persistent="false"
+            android:defaultValue="255"
+            android:max="255"
+            settings:min="25"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:keywords="@string/keywords_color_balance"
+            settings:controller="com.android.settings.display.ColorBalancePreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_saturation"
+            android:title="@string/color_saturation_title"
+            android:persistent="false"
+            android:defaultValue="100"
+            android:max="200"
+            settings:min="0"
+            settings:units="%"
+            settings:showSign="true"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:controller="com.android.settings.display.ColorSaturationPreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_temperature"
+            android:title="@string/color_temperature_title"
+            android:persistent="false"
+            android:defaultValue="6500"
+            android:max="9000"
+            settings:min="3000"
+            settings:interval="100"
+            settings:units="K"
+            settings:showSign="true"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:textStart="@string/color_temperature_start_label"
+            settings:textEnd="@string/color_temperature_end_label"
+            settings:keywords="@string/keywords_color_temperature"
+            settings:controller="com.android.settings.display.ColorTemperaturePreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_hue"
+            android:title="@string/color_hue_title"
+            android:persistent="false"
+            android:defaultValue="0"
+            android:max="180"
+            settings:min="-180"
+            settings:units="°"
+            settings:showSign="true"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:controller="com.android.settings.display.ColorHuePreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_contrast"
+            android:title="@string/color_contrast_title"
+            android:persistent="false"
+            android:defaultValue="100"
+            android:max="200"
+            settings:min="50"
+            settings:units="%"
+            settings:showSign="true"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:controller="com.android.settings.display.ColorContrastPreferenceController" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="color_picture_brightness"
+            android:title="@string/color_picture_brightness_title"
+            android:persistent="false"
+            android:defaultValue="100"
+            android:max="200"
+            settings:min="50"
+            settings:units="%"
+            settings:showSign="true"
+            settings:continuousUpdates="true"
+            settings:showButtons="false"
+            settings:controller="com.android.settings.display.ColorPictureBrightnessPreferenceController" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

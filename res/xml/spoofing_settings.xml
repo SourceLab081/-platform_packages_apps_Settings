@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="spoofing_settings"
+    android:title="@string/spoof_settings_title">
+
+    <!-- System Spoofing Category -->
+    <PreferenceCategory
+        android:key="system_spoof_category"
+        android:title="@string/system_spoof_title">
+
+        <!-- Play Integrity Fix -->
+        <Preference
+            android:key="play_integrity_fix"
+            android:title="@string/play_integrity_fix_title"
+            android:summary="@string/play_integrity_fix_summary"
+            android:fragment="com.android.settings.custom.spoofing.PlayIntegrityFix" />
+
+        <!-- TrickyStore -->
+        <Preference
+            android:key="tricky_store"
+            android:title="@string/tricky_store_title"
+            android:summary="@string/tricky_store_summary"
+            android:fragment="com.android.settings.custom.spoofing.TrickyStore" />
+
+        <!-- Game Spoofing -->
+        <Preference
+            android:key="game_spoofing"
+            android:title="@string/game_spoofing_title"
+            android:summary="@string/game_spoofing_summary"
+            android:fragment="com.android.settings.custom.spoofing.GameSpoofing" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="miscellaneous_category"
+        android:title="@string/miscellaneous_title">
+
+        <!-- App Spoofing -->
+        <Preference
+            android:key="user_selectable_app_spoofing"
+            android:title="@string/user_selectable_app_spoofing_title"
+            android:summary="@string/user_selectable_app_spoofing_summary"
+            android:fragment="com.android.settings.system.spoofing.UserSelectedAppSpoofSettings" />
+
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
+
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/app_downgrade_title"
+            android:summary="@string/app_downgrade_summary"
+            android:defaultValue="false" />        
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.settings.widget.SeekBarPreference
+        android:key="statusbar_extra_padding_start"
+        android:title="@string/statusbar_padding_start_title"
+        android:defaultValue="0"
+        android:max="30"
+        android:min="-30"
+        android:persistent="false" />
+
+    <com.android.settings.widget.SeekBarPreference
+        android:key="statusbar_extra_padding_top"
+        android:title="@string/statusbar_padding_top_title"
+        android:defaultValue="0"
+        android:max="30"
+        android:min="-30"
+        android:persistent="false" />
+
+    <com.android.settings.widget.SeekBarPreference
+        android:key="statusbar_extra_padding_end"
+        android:title="@string/statusbar_padding_end_title"
+        android:defaultValue="0"
+        android:max="30"
+        android:min="-30"
+        android:persistent="false" />
+
+</PreferenceScreen>
